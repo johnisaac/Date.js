@@ -104,6 +104,11 @@ var D = {
       var nextSunday = this.nextDay(nextSaturday);
       var nextWeek = this.thisWeek(nextSunday);
       return nextWeek;
+   },
+   
+   addDays: function(date, num){
+      var inputDate = date.getTime();
+      return new Date(inputDate+(this.oneDay*num))
    }
 }
 
@@ -132,4 +137,4 @@ var D = {
 // remove few days to a date.
 // input should be a normalized one
 var d = new Date();
-console.log( D.lastWeek(d) );
+console.log( D.addDays(d, 5) );
