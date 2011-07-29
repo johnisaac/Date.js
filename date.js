@@ -114,7 +114,7 @@ var D = {
    removeDays: function(date, num){
       var inputDate = date.getTime();
       return new Date(inputDate-(this.oneDay*num))
-   },
+   }
 }
 
 // function ideas
@@ -123,6 +123,7 @@ var D = {
 // last week range - done
 // this week rane - done
 // next week range - done
+// custom from - to date
 // lastMonth
 // nextMonth
 // thisMonth
