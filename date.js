@@ -109,7 +109,12 @@ var D = {
    addDays: function(date, num){
       var inputDate = date.getTime();
       return new Date(inputDate+(this.oneDay*num))
-   }
+   },
+   
+   removeDays: function(date, num){
+      var inputDate = date.getTime();
+      return new Date(inputDate-(this.oneDay*num))
+   },
 }
 
 // function ideas
@@ -133,8 +138,8 @@ var D = {
 // lastYear
 // nextYear
 // isLeapYear - done
-// add few days to a date.
+// add few days to a date - done
 // remove few days to a date.
 // input should be a normalized one
 var d = new Date();
-console.log( D.addDays(d, 5) );
+console.log( D.removeDays(d, 5) );
